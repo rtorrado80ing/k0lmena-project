@@ -1,0 +1,17 @@
+{
+  "name": "k0lmena-project",
+  "version": "1.0.0",
+  "scripts": {
+    "test:ui": "npx cucumber-js tests/ui/features --require-module ts-node/register --require tests/ui/**/*.ts",
+    "test:api": "npx cucumber-js tests/api/features --require tests/api/steps",
+    "test:perf": "npx artillery run tests/performance/scripts/test-load.yml",
+    "report": "allure generate --clean && allure open"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.0.0",
+    "@playwright/test": "^1.38.0",
+    "artillery": "^2.0.0-27",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}

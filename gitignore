@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Playwright
+playwright-report/
+test-results/
+*.log
+
+# VSCode
+.vscode/
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# Allure reports
+allure-results/
+allure-report/
+
+# Environment
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
